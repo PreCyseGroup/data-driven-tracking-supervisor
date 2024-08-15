@@ -16,12 +16,9 @@ This paper proposes a data-driven control architecture capable of preserving the
 3- Add the repo folder and subfolders to the Matlab path.
 
 ## Files Description
-Two scenarios have been considered in this work. 
-### Scenario 1: Attack on the actuation channel 
-1- To simulate this scenario, please run "data_driven_architecture_attack_on_actuation.m"  
-
-### Scenario 2: Attack on the measurement channel 
-2- To simulate this scenario, please run "data_driven_architecture_attack_on_measurement.m" 
+One scenario has been considered in this work. 
+### Scenario: Attack on the measurement channel 
+2- To simulate this scenario, please run "main.m" 
 
 #### Function Descriptions
 - "compute_AB.m": computes all possible system matrices that are consistent with the data
