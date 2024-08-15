@@ -33,4 +33,8 @@ To simulate this scenario, please run "main.m"
 - "detector_data_driven.m": simulates the data-driven anomaly detector local to the tracking controller, which is in charge of detecting anomalies caused by FDI attacks
 
 
-###
+### Figures
+![Proposed architecture]([https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_A_alarm_safety.jpg](https://github.com/PreCyseGroup/data-driven-control-architecture-for-preserving-the-safety-and-tracking-performance-of-CPS/blob/main/Figures/proposed_architecture.jpg)
+![State trajectory: proposed solution with attacks (blue solid
+line) vs trajectory in attack-free scenario (purple dashed line).](https://github.com/PreCyseGroup/data-driven-control-architecture-for-preserving-the-safety-and-tracking-performance-of-CPS/blob/main/Figures/trajectories.jpg)
+![State evolution: no attack, proposed approach, \cite{attar2024safety}](https://github.com/PreCyseGroup/data-driven-control-architecture-for-preserving-the-safety-and-tracking-performance-of-CPS/blob/main/Figures/state_evolutions.jpg)
