@@ -18,7 +18,7 @@ This paper proposes a data-driven control architecture capable of preserving the
 ## Files Description
 One scenario has been considered in this work. 
 ### Scenario: Attack on the measurement channel 
-2- To simulate this scenario, please run "main.m" 
+To simulate this scenario, please run "main.m" 
 
 #### Function Descriptions
 - "compute_AB.m": computes all possible system matrices that are consistent with the data
@@ -31,42 +31,6 @@ One scenario has been considered in this work.
 - "poly_approx.m": computes a zonotopic inner approximation of a polyhedron 
 - "set_index.m": computes the set membership index of a state for the data-driven ROSC sets.
 - "detector_data_driven.m": simulates the data-driven anomaly detector local to the tracking controller, which is in charge of detecting anomalies caused by FDI attacks
-
-## Data
-### Case A: 
-x_data_caseA: contains the system's trajectory with the safety modules 
-
-u_ver_caseA: contains the control signal applied to the plant
-
-x_w_caseA: contains the system's trajectory without the safety modules
-
-### Case B: 
-x_data_caseB: contains the system's trajectory with the safety modules 
-
-u_ver_caseB: contains the control signal applied to the plant
-
-x_w_caseB: contains the system's trajectory without the safety modules
-
-
-## Animated test 
-### Scenario 1: Attack on the actuation channel 
-1- please run "animated_test_S1.m"  
-
-### Scenario 2: Attack on the measurement channel 
-2- please run "animated_test_S2.m" 
-
-# Figures 
-### Attack on the actuation channel: 
-![State Evolution](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_A_state_trajectory.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_A_alarm_safety.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_A_comparison.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_A_control.jpg)
-
-### Attack on the measurement channel: 
-![State Evolution](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_B_state_trajectory.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_B_alarm_safety.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_B_comparison.jpg)
-![Alarm, emergency and Safety Signals](https://github.com/attarmehran/Data-Driven-Safety-Preserving-Control-Architecture-for-Constrained-CPS/blob/main/Figures/case_B_control.jpg)
 
 
 ###
