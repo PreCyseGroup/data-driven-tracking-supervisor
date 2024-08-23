@@ -200,6 +200,12 @@ ts_flag = 0;  % tracking supervisor activation flag
    
 D_delay = 5;  % anomaly detector detection delay 
 
+fprintf('=========================================================================================')
+fprintf('\n')
+fprintf(' =====  simulating the proposed method using the tracking supervisor module =============')
+fprintf('=========================================================================================')
+fprintf('\n')
+pause(5)
 % simulation of the system -- presence of attack on the measurement channel
 for k=1:sim_time
     pause(0.1)
@@ -314,7 +320,12 @@ end
 %% configuration proposed in:
 % "A Data-Driven Safety Preserving Control Architecture for Constrained Cyber-Physical Systems"
 % by "Mehran Attar and Walter Lucia" 
-
+fprintf('=========================================================================================')
+fprintf('\n')
+fprintf('======= simulating the proposed method without tracking module ==========================')
+fprintf('\n')
+fprintf('=========================================================================================')
+pause(5)
 hold on
 for k=1:sim_time
     
@@ -401,8 +412,19 @@ for i=1:sim_time
     y_a(:,i)=[0;0];
 end
 %% Configuration in the absence of attacks 
+fprintf('=========================================================================================')
+fprintf('\n')
+fprintf('==== simulating the dynamical behavior of the system in the absence of cyber attacks === ')
+fprintf('\n')
+fprintf('=========================================================================================')
+
+pause(5)
+
 hold on
 for k=1:sim_time
+    
+    fprintf('time = %d\n', k)
+    fprintf('\n')
     
     % computing data-driven tracking controller
     ctr_data(:,k) = -K*x_w_prime(:,k) + ss_input(:,k);
@@ -471,7 +493,7 @@ for k=1:sim_time
         attack(k)=true;
     end
     pause(0.1)
-    k
+    
 end
 %% state trajectories for different setups
 
@@ -561,6 +583,8 @@ for i=1:sim_time
     sum_without_attack(i) = abs(r(i) - x_w(i));
 end
 
+fprintf('=========================================================================================')
+fprintf('\n')
 fprintf('tracking error - proposed method: %d\n',mean(sum_proposed))
 fprintf('\n')
 fprintf('tracking error - proposed method in [12]: %d\n',mean(sum_previous_app))
