@@ -1,7 +1,7 @@
 # A Data-Driven Approach To Preserve Safety and Reference Tracking for Constrained Cyber-Physical Systems Under Network Attacks
 
 ## Description 
-This repository contains the codes for "A Data-Driven Approach To Preserve Safety and Reference Tracking for Constrained Cyber-Physical Systems Under Network Attacks" by [Mehran Attar](https://scholar.google.com/citations?user=nnLTy-oAAAAJ&hl=en) and [Walter Lucia](https://users.encs.concordia.ca/~wlucia/index.html) which has been submitted to publish in IEEE Transactions on Automatic Control --> [Arxiv link](https://arxiv.org/abs/2312.00658)
+This repository contains the codes for "A Data-Driven Approach To Preserve Safety and Reference Tracking for Constrained Cyber-Physical Systems Under Network Attacks" by [Mehran Attar](https://scholar.google.com/citations?user=nnLTy-oAAAAJ&hl=en) and [Walter Lucia](https://users.encs.concordia.ca/~wlucia/index.html) which has been submitted to publish in IEEE Transactions on Automatic Control
 
 
 ## Abstracat 
