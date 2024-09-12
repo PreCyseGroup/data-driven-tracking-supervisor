@@ -35,7 +35,7 @@ To simulate this scenario, please run "main.m"
 
 ### Figures
 #### Proposed Architecture
-![Proposed architecture](https://github.com/PreCyseGroup/data-driven-control-architecture-for-preserving-the-safety-and-tracking-performance-of-CPS/blob/main/Figures/proposed_architecture.jpg)
+![Proposed architecture](https://github.com/PreCyseGroup/data-driven-control-architecture-for-preserving-the-safety-and-tracking-performance-of-CPS/blob/main/Figures/proposed_architecture.png)
 
 #### State trajectory: proposed solution with attacks (blue solid line) vs trajectory in attack-free scenario (purple dashed line).
 ![State trajectory: proposed solution with attacks (blue solid
