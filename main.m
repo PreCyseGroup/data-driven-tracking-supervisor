@@ -557,7 +557,7 @@ handle_old = plot(x_data(2,:),'g:','LineWidth',2)
 hold on
 handle_w = plot(x_w(2,:),'color',[0.7176    0.2745    1.0000],'LineWidth',3.5,'LineStyle',':');
 hold on
-handle_ref = plot(r(2,:),'r--','LineWidth',1.5)
+handle_ref = plot(r(2,:),'r--','LineWidth',1.5);
 xlim([0 sim_time])
 
 ylim([-30 30])
@@ -591,4 +591,9 @@ fprintf('tracking error - proposed method in [12]: %d\n',mean(sum_previous_app))
 fprintf('\n')
 fprintf('tracking error - absence of attack: %d\n',mean(sum_without_attack))
 
+%% Visualization 
+fprintf('=========================================================================================')
+fprintf('\n')
+fprintf('visualization!')
+run('visualizations.m')
 
