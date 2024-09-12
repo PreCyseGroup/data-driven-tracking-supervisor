@@ -11,7 +11,7 @@
 
 % function [V_AB,AB,X_0T,X_1T,u] = compute_AB(sys,X0,U,W)
 
-function AB = compute_AB(sys,X0,U,W)
+function AB = compute_AB(sys,X0,U,W,initpoints,steps)
 w = warning ('off','all');
 rmpath('folderthatisnotonpath')
 warning(w)
@@ -94,19 +94,18 @@ end
 
 AB = matZonotope(X1W_cen,Wmatzonos);
 
-% matrixCenter = [AB.center;zeros(size(B,2),size(A,2)+size(B,2))];
-% % 
-% for i=1:AB.gens
-%   G{i}=[AB.generator{i};zeros(size(B,2),size(A,2)+size(B,2))];  
-% end
+matrixCenter = [AB.center;zeros(size(B,2),size(A,2)+size(B,2))];
 % 
-% % instantiate matrix zonotope
-% M_zono = matZonotope(matrixCenter, G);
-% 
-% % obtain result of all vertices 
-% V_AB = vertices(M_zono);
-% 
-% disp('The rank of data is: ' + string(rank([u;X_0T])))
-
+for i=1:AB.gens
+  G{i}=[AB.generator{i};zeros(size(B,2),size(A,2)+size(B,2))];  
 end
 
+% instantiate matrix zonotope
+M_zono = matZonotope(matrixCenter, G);
+
+% obtain result of all vertices 
+V_AB = vertices(M_zono);
+
+disp('The rank of data is: ' + string(rank([u;X_0T])))
+
+end
