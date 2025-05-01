@@ -1,7 +1,7 @@
 
 % Author:       Mehran Attar - Montreal, Canada
 % Written:      22-August-2024
-% Last update:  --------------
+% Last update:  01-May-2025
 % Last revision: -------------
 %---------------------------------------------------------------
 % Purpose:
@@ -54,8 +54,8 @@ Td_f = load('Td_f').Td_f;  % tracking controller DoA
 
 
 initpoints = 2;
-steps = 2;
-AB = compute_AB(sys,X,U,W,initpoints,steps);   % computing system matrices that consistant with data
+steps = 2; 
+[AB,X_0T,U_full] = compute_AB(sys,X,U,W,initpoints,steps);    % computing system matrices that consistant with data
 
 % simulation settings
 sim_time = 600;    % simulation time
@@ -81,7 +81,7 @@ end
 %
 % defining FDI attack on the measurement channel
 for i=1:sim_time+1
-    if i>=60 && i<=110
+    if i>=60 && i<=125
         y_a(:,i)=0.01*[(i-59);(i-59)];
         attack(i)=1;
     elseif i>=200 && i<=220
@@ -322,7 +322,7 @@ end
 % by "Mehran Attar and Walter Lucia" 
 fprintf('=========================================================================================')
 fprintf('\n')
-fprintf('======= simulating the proposed method without tracking module ==========================')
+fprintf('======= simulating the proposed method without tracking supervisor module ===============')
 fprintf('\n')
 fprintf('=========================================================================================')
 pause(5)
@@ -503,7 +503,7 @@ f.Position = [700 70 600 400]
 f1 = subplot(2,1,1)
 f1.InnerPosition = [0.096,0.58,0.87,0.4];
 
-x11 = [60 110 110 60];
+x11 = [60 125 125 60];
 y11 = [-10 -10 10 10];
 handle_attack = patch(x11,y11,'red','FaceAlpha',0.2,'EdgeColor','none');
 hold on
@@ -533,7 +533,7 @@ xlim([0 sim_time])
 
 f2 = subplot(2,1,2)
 f2.InnerPosition = [0.096,0.15,0.87,0.4];
-x11 = [60 110 110 60];
+x11 = [60 125 125 60];
 y11 = [-30 -30 30 30];
 handle_attack = patch(x11,y11,'red','FaceAlpha',0.2,'EdgeColor','none');
 hold on
@@ -567,7 +567,7 @@ box on
 legend([handle_new,handle_w,handle_old,handle_ref,handle_attack],...
     'Proposed approach',...
     'No Attack',...
-    'Approach in [12]',...
+    'Approach in [2]',...
     '$r_k$',...
     'Attack period','Interpreter','Latex',...
     'Location','best','FontSize',9)
