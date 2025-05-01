@@ -1,7 +1,7 @@
 
 % Author:       Mehran Attar
 % Written:      10-December-2023
-% Last update:  --------------
+% Last update:  01-May-2025
 % Last revision: 10-December-2023 
 %---------------------------------------------------------------
 % This function computes the set of all system matrices, \mathcal{M}_{AB} that is consistent
@@ -9,9 +9,8 @@
 % \mathcal{V}_{AB}
 %------------- BEGIN CODE --------------
 
-% function [V_AB,AB,X_0T,X_1T,u] = compute_AB(sys,X0,U,W)
+function [AB,X_0T,U_full] = compute_AB(sys,X0,U,W,initpoints,steps)
 
-function AB = compute_AB(sys,X0,U,W,initpoints,steps)
 w = warning ('off','all');
 rmpath('folderthatisnotonpath')
 warning(w)
@@ -26,12 +25,12 @@ dim_x = size(A,1);
 dim_u = size(B,2);
 
 %Number of trajectories
-initpoints =1;
+% initpoints =1;
 %Number of time steps
-steps = 1;
-initpoints = 2;
+% steps = 1;
+% initpoints = 2;
 %Number of time steps
-steps =2;
+% steps = 2;
 totalsamples = initpoints*steps;
 %% initial set and input
 
@@ -103,9 +102,10 @@ end
 % instantiate matrix zonotope
 M_zono = matZonotope(matrixCenter, G);
 
-% obtain result of all vertices 
-V_AB = vertices(M_zono);
+%% For computing the vertices of the M_{AB} uncomment the following line 
+% V_AB = vertices(M_zono);    % computing the vertices of the M_{AB} 
 
-disp('The rank of data is: ' + string(rank([u;X_0T])))
+% disp('The rank of data is: ' + string(rank([u;X_0T])))
 
 end
+
