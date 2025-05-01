@@ -1,3 +1,13 @@
+% Author:       Mehran Attar - Montreal, Canada
+% Written:      22-August-2024
+% Last update:  --------------
+% Last revision: -------------
+%---------------------------------------------------------------
+
+
+%------------- BEGIN CODE --------------
+
+
 clc; 
 clear all; 
 close all;
@@ -92,4 +102,4 @@ title(sprintf('forward reachable set $\\mathcal{W}(0, %.3f)$', bound), ...
 print -depsc -tiff -r300 -painters comparison_id.eps
 
 
-
+%------------- END CODE --------------
