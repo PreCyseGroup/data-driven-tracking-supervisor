@@ -9,9 +9,9 @@
 % in constrained Cyber-Physical Systems (CPS) under network attacks. 
 % The architecture uses data-driven techniques to maintain system robustness and resilience against attacks, 
 % while adhering to system constraints. 
-% The core algorithms implemented here enable monitoring, analysis, and adjustment of system behavior to uphold 
+% The core algorithms implemented here enable monitoring, analysis, and adjustment of system behaviour to uphold 
 % optimal performance and safety standards. Moreover, the results are
-% compared with the setups without tracking supervisor module and absence
+% compared with the setups without the tracking supervisor module and absence
 % of attacks. 
 
 %------------- BEGIN CODE --------------
@@ -596,4 +596,5 @@ fprintf('=======================================================================
 fprintf('\n')
 fprintf('visualization!')
 run('visualizations.m')
+
 
