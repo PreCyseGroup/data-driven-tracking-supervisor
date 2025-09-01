@@ -1,6 +1,6 @@
 function J = performance_cal(V,ref_index,X_1,I)
 % Author:       Mehran Attar - Montreal, Canada
-% Written:      22-August-2024
+% Written:      01-September-2025
 % Last update:  --------------
 % Last revision: ------------- 
 %---------------------------------------------------------------
@@ -14,4 +14,5 @@ end
 %
 %------------- END CODE ----------------
 end
+
 
