@@ -1,7 +1,7 @@
 function S = TS(S,u,AB,W)
 
 % Author:       Mehran Attar - Montreal, Canada
-% Written:      22-August-2024
+% Written:      22-August-2025
 % Last update:  --------------
 % Last revision: ------------- 
 %---------------------------------------------------------------
@@ -15,4 +15,5 @@ S = (AB * (cartProd(S,u1))) + W;
 
 %------------- END CODE ----------------
 end
+
 
