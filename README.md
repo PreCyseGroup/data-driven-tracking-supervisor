@@ -35,7 +35,7 @@ To simulate this scenario, please run "main.m"
 
 ### Figures
 #### Proposed Architecture
-![Proposed architecture](Figures/proposed_architecture.png)
+![Proposed architecture](Figures/proposed architecture.png)
 
 #### State trajectory: proposed solution with attacks (blue solid line) vs trajectory in attack-free scenario (purple dashed line).
 ![State trajectory: proposed solution with attacks (blue solid
