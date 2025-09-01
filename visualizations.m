@@ -1,4 +1,4 @@
-%% Trajectory Visualization
+%% ---- Trajectory Visualization  ----
 % clc
 % close all
 f = figure;
@@ -166,6 +166,7 @@ ylim([17 22])
 
 
 print -depsc -tiff -r600 -painters trajectories.eps
+
 
 
 
