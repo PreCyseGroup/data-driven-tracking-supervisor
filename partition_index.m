@@ -1,6 +1,6 @@
 function v = partition_index(V,x)
 
-% this function find the index of the voronoi partition 
+% This function find the index of the Voronoi partition 
 
 for i=1:size(V,2)
    if V{i}.contains(x) == 1
@@ -8,4 +8,5 @@ for i=1:size(V,2)
    end
 end
 end
+
 
