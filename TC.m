@@ -1,6 +1,6 @@
 function u = TC(x_prime,ss_input,K)
 % Author:       Mehran Attar - Montreal, Canada
-% Written:      22-August-2024
+% Written:      22-August-2025
 % Last update:  --------------
 % Last revision: ------------- 
 %---------------------------------------------------------------
@@ -11,4 +11,5 @@ u = -K*x_prime + ss_input;
 u =  min(max(u, [-2;-10]), [2;10]);   % saturation 
 %------------- END CODE ----------------
 end
+
 
