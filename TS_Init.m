@@ -1,7 +1,7 @@
 function R1 = TS_Init(x,u,AB,W)
 
 % Author:       Mehran Attar - Montreal, Canada
-% Written:      22-August-2024
+% Written:      22-August-2025
 % Last update:  --------------
 % Last revision: ------------- 
 %---------------------------------------------------------------
@@ -13,4 +13,5 @@ u1 = zonotope(u,0*diag(ones(2,1)));
 R1 = (AB * (cartProd(x1,u1))) + W;
 %------------- END CODE ----------------
 end
+
 
