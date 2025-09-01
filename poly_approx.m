@@ -1,5 +1,5 @@
 % Author:       Mehran Attar
-% Written:      10-December-2023
+% Written:      01-Septermber-2025
 % Last update:  --------------
 % Last revision: 10-December-2023
 % This function computes a zonotopic inner approximation of a polytope 
@@ -30,5 +30,6 @@ end
 
 out_approx = zonotope(center,generator);
 end
+
 
 %------------- END CODE --------------
