@@ -1,6 +1,6 @@
 % Author:       Mehran Attar - Montreal, Canada
 % Revised:      Data-driven vs model-based simulation + conservatism analysis
-% Modified:     Added conditional real-time plotting of one-step reachable sets
+
 % Purpose:
 % This script runs:
 %   1) Data-driven architecture using M_AB.
